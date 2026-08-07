@@ -1,6 +1,6 @@
 [package]
 name = "revfl"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["carbonatedtea", "leoetlino"]
 description = "A Rust library for parsing and writing Nintendo BFEVFL (Event Flow) files"
