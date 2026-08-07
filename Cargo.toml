@@ -1,0 +1,15 @@
+[package]
+name = "revfl"
+version = "0.1.0"
+edition = "2024"
+authors = ["carbonatedtea", "leoetlino"]
+description = "A Rust library for parsing and writing Nintendo BFEVFL (Event Flow) files"
+# license = "MIT" # TODO: Fill this in when ready
+repository = "https://github.com/carbonatedtea/revfl" # TODO: Update this
+keywords = ["bfevfl", "nintendo", "event-flow", "game-data"]
+categories = ["parsing", "game-development"]
+
+
+[dependencies]
+indexmap = { version = "2.14.0", features = ["serde"] }
+serde = { version = "1.0", features = ["derive"] }
