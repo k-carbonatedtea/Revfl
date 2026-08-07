@@ -90,7 +90,6 @@ fn main() {
 
 本库是 [leoetlino](https://github.com/leoetlino) 编写的原始 Python 版本的 Rust 移植版。
 原始的 `evfl` 库地址：[https://github.com/zeldamods/evfl](https://github.com/zeldamods/evfl)。
-由 [carbonatedtea] 移植到 Rust。
 
 ## 许可证
 

@@ -90,7 +90,6 @@ The core structures provided by this library reflect the BFEVFL format:
 
 This library is a Rust port of the original Python implementation by [leoetlino](https://github.com/leoetlino).
 The original `evfl` library can be found at: [https://github.com/zeldamods/evfl](https://github.com/zeldamods/evfl).
-Ported to Rust by [carbonatedtea].
 
 ## License
 
