@@ -2,7 +2,7 @@
 
 [![Crates.io](https://img.shields.io/crates/v/revfl.svg)](https://crates.io/crates/revfl)
 [![Documentation](https://docs.rs/revfl/badge.svg)](https://docs.rs/revfl)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL 2.0](https://img.shields.io/badge/License-GPL%202.0-blue.svg)](https://opensource.org/licenses/GPL-2.0)
 
 [中文说明](README_zh.md)
 
@@ -93,4 +93,4 @@ The original `evfl` library can be found at: [https://github.com/zeldamods/evfl]
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GPL-2.0 License.

@@ -2,7 +2,7 @@
 
 [![Crates.io](https://img.shields.io/crates/v/revfl.svg)](https://crates.io/crates/revfl)
 [![Documentation](https://docs.rs/revfl/badge.svg)](https://docs.rs/revfl)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL 2.0](https://img.shields.io/badge/License-GPL%202.0-blue.svg)](https://opensource.org/licenses/GPL-2.0)
 
 [English](README.md)
 
@@ -93,4 +93,4 @@ fn main() {
 
 ## 许可证
 
-本项目基于 MIT 许可证开源。
+本项目基于 GPL-2.0 许可证开源。
