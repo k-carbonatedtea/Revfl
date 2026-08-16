@@ -432,6 +432,12 @@ impl<T> Index<T> {
     }
 }
 
+impl<T> Default for Index<T> {
+    fn default() -> Self {
+        Self { v: None, idx: 0xFFFF }
+    }
+}
+
 #[derive(Debug, Clone, PartialEq, Eq, PartialOrd, Ord, Hash)]
 #[derive(serde::Serialize, serde::Deserialize)]
 pub struct RequiredIndex<T> {
@@ -446,5 +452,11 @@ impl<T> RequiredIndex<T> {
 
     pub fn from_value(v: T) -> Self {
         Self { v: Some(v), idx: 0xFFFF }
+    }
+}
+
+impl<T> Default for RequiredIndex<T> {
+    fn default() -> Self {
+        Self { v: None, idx: 0xFFFF }
     }
 }

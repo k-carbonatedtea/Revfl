@@ -4,8 +4,9 @@ use std::io::{Seek, Write};
 /// Represents an entry point in a flowchart where execution can start.
 /// 
 /// 表示流程图中可以开始执行的入口点。
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct EntryPoint {
     pub name: String,
     pub main_event: Index<usize>, // index of Event

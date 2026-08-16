@@ -4,8 +4,9 @@ use crate::util::{BinaryObject, Index, PlaceholderWriter, ReadStream, RequiredIn
 use indexmap::IndexMap;
 use std::io::{Seek, Write};
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct ActionEvent {
     pub nxt: Index<usize>, // Points to event idx
     pub actor: RequiredIndex<usize>, // Points to actor idx
@@ -14,8 +15,9 @@ pub struct ActionEvent {
     pub params_offset_writer: Option<PlaceholderWriter>,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct SwitchEvent {
     pub actor: RequiredIndex<usize>,
     pub actor_query: RequiredIndex<usize>,
@@ -25,22 +27,25 @@ pub struct SwitchEvent {
     pub cases_offset_writer: Option<PlaceholderWriter>,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct ForkEvent {
     pub join: RequiredIndex<usize>,
     pub forks: Vec<RequiredIndex<usize>>,
     pub forks_offset_writer: Option<PlaceholderWriter>,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct JoinEvent {
     pub nxt: Index<usize>,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct SubFlowEvent {
     pub nxt: Index<usize>,
     pub params: Option<Container>,

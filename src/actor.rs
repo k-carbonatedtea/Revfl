@@ -6,8 +6,9 @@ use std::io::{Seek, Write};
 /// Represents an entity (Actor) involved in the event flow, capable of performing actions or answering queries.
 /// 
 /// 表示参与事件流的实体 (Actor)，能够执行动作 (actions) 或回答查询 (queries)。
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct Actor {
     pub identifier: ActorIdentifier,
     pub argument_name: String,

@@ -8,8 +8,9 @@ use std::io::{Seek, Write};
 /// Represents a logic flowchart containing actors, events, and entry points.
 /// 
 /// 表示一个包含角色 (actors)、事件 (events) 和入口点 (entry points) 的逻辑流程图。
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct Flowchart {
     /// The name of the flowchart. / 流程图的名称。
     pub name: String,

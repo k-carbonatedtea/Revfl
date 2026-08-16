@@ -9,6 +9,7 @@ use std::io::{Seek, Write};
 /// 表示时间线中的一个过场动画剪辑 (Clip)。
 #[derive(Debug, Clone)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct Clip {
     pub start_time: f32,
     pub duration: f32,
@@ -81,6 +82,7 @@ impl BinaryObject for Clip {
 
 #[derive(Debug, Clone)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct Oneshot {
     pub time: f32,
     pub actor: RequiredIndex<usize>,
@@ -142,6 +144,7 @@ impl BinaryObject for Oneshot {
 
 #[derive(Debug, Clone)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct Cut {
     pub start_time: f32,
     pub x4: u32,
@@ -201,6 +204,7 @@ impl BinaryObject for Cut {
 
 #[derive(Debug, Clone)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct Trigger {
     pub clip: RequiredIndex<usize>,
     pub trigger_type: TriggerType,
@@ -246,6 +250,7 @@ impl BinaryObject for Trigger {
 
 #[derive(Debug, Clone)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct Subtimeline {
     pub name: String,
 }
@@ -279,6 +284,7 @@ impl BinaryObject for Subtimeline {
 /// 表示一个时间线容器，用于按时间顺序排列事件（例如：过场动画中）。
 #[derive(Debug, Clone)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct Timeline {
     pub name: String,
     pub duration: f32,

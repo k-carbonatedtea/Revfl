@@ -9,6 +9,7 @@ use std::io::{Seek, Write};
 /// 事件文件的根容器，表示一个流程图 (Flowchart) 或时间线 (Timeline)。
 #[derive(Debug, Clone, Default)]
 #[derive(serde::Serialize, serde::Deserialize)]
+#[serde(default)]
 pub struct EventFlow {
     /// The name of the event flow. / 事件流的名称。
     pub name: String,
